@@ -13,11 +13,14 @@ body {
     color: white;
 }
 
+/* menu */
 ul {
     list-style: none;
 }
 
 .logo {
+    display: flex;
+    align-items: center;
     font-size: 2rem;
     font-family: 'Poiret One', Arial;
 }
@@ -39,8 +42,6 @@ ul {
     color: gray;
     transition: all 0.2s ease-in-out;
 }
-
-/* menu */
 
 .menu {
     opacity: 0.3;
@@ -235,6 +236,20 @@ main {
 
 
 /* media queries */
+@media screen and (max-width: 481px) {
+    .nav-link {
+        font-size: 1.8rem;
+    }
+
+    .background {
+        font-size: 9rem;
+    }
+
+    .exit {
+        padding: 0;
+    }
+}
+
 @media screen and (max-width: 660px) {
     .menu {
         flex-direction: column;
