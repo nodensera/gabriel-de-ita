@@ -237,6 +237,12 @@ main {
 
 /* media queries */
 @media screen and (max-width: 481px) {
+
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+    } 
+    
     .nav-link {
         font-size: 1.8rem;
     }
