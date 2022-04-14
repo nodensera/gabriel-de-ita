@@ -80,7 +80,6 @@ ul {
     font-weight: 600;
     color: #303030;
     user-select: none;
-    z-index: 1;
 }
 
 .small-number {
@@ -164,8 +163,12 @@ button {
       display: inline-block;
 }
 
+button:hover {
+    background-color: #ffffff0a;
+    cursor: pointer;
+}
+
 button:focus {
-      outline: none;
 }
 
 .block-1 {
@@ -225,8 +228,6 @@ button:focus {
       padding-top: 16%;
 }
 
-
-
 main {
     overflow: hidden;
     margin-bottom: 3em;
@@ -242,7 +243,7 @@ main {
         flex-direction: column;
         justify-content: center;
     } 
-    
+
     .nav-link {
         font-size: 1.8rem;
     }
