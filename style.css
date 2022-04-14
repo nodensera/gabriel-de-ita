@@ -14,26 +14,34 @@ body {
 }
 
 /* menu */
+nav {
+    position: relative;
+    z-index: 3;
+}
+
 ul {
     list-style: none;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    font-size: 2rem;
     font-family: 'Poiret One', Arial;
 }
 
+.logo img {
+    height: 42px !important;
+}
+
 .home {
-    display: flex;
-    justify-content: space-between;
-    padding: 21px 136px;
-    align-items: end;
+    position: absolute;
+    top: 1rem;
+    right: 0.4em;
 }
 
 .menu-div {
-    font-size: 1.3rem;
+    position: absolute;
+    font-size: 1.2rem;
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
@@ -59,7 +67,8 @@ ul {
 }
 
 .nav {
-    margin-bottom: -20px;
+    padding: 3px 0;
+    margin-bottom: -24px;
 }
 
 .nav-link {
@@ -125,12 +134,11 @@ ul {
       margin: 0 auto;
       padding: 0;
       width: 100%;
-      height: 81vh;
+      height: 100vh;
 }
 
 .image-slide {
-      height: 81vh;
-      margin: 0 auto;
+      height: 100vh;
 }
 
 .slick-slide.slick-center {
@@ -174,7 +182,7 @@ button:focus {
 .block-1 {
       z-index: 1;
       position: fixed;
-      height: 81vh;
+      height: 100vh;
       width: 5%;
       left: 0%;
       background: #212121;
@@ -183,7 +191,7 @@ button:focus {
 .block-2 {
       z-index: 1;
       position: fixed;
-      height: 81vh;
+      height: 100vh;
       width: 25%;
       left: 25%;
       background: #212121;
@@ -192,7 +200,7 @@ button:focus {
 .block-3 {
       z-index: 1;
       position: fixed;
-      height: 81vh;
+      height: 100vh;
       width: 5%;
       right: 0%;
       background: #212121;
@@ -201,7 +209,7 @@ button:focus {
 .overlay {
       z-index: 1;
       position: fixed;
-      height: 81vh;
+      height: 100vh;
       width: 20.1%;
       left: 5%;
       background: rgba(0, 0, 0, .65);
@@ -217,7 +225,7 @@ button:focus {
 .text-slider {
       margin: 0%;
       padding: 0%;
-      height: 81vh;
+      height: 100vh;
 }
 
 .text-slide h1 {
@@ -229,8 +237,8 @@ button:focus {
 }
 
 main {
+    position: relative;
     overflow: hidden;
-    margin-bottom: 3em;
 }
 
 
@@ -255,6 +263,7 @@ main {
     .exit {
         padding: 0;
     }
+
 }
 
 @media screen and (max-width: 660px) {
