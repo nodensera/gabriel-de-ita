@@ -34,13 +34,13 @@ ul {
 .home {
     position: absolute;
     top: 1rem;
-    right: 0.4em;
+    right: .3rem;
 }
 
 .menu-div {
-    position: absolute;
     font-size: 1.2rem;
     writing-mode: tb-rl;
+    padding: 0 6px 0 0;
     transform: rotate(-180deg);
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -139,6 +139,7 @@ ul {
 
 .image-slide {
       height: 100vh;
+      background-position: 25% 20%;
 }
 
 .slick-slide.slick-center {
@@ -247,6 +248,10 @@ main {
 /* media queries */
 @media screen and (max-width: 481px) {
 
+    .home {
+        left: 0;
+    }
+
     .menu {
         flex-direction: column;
         justify-content: center;
@@ -277,6 +282,7 @@ main {
     }
 
      .home {
+         left: 0;
         padding: 21px 36px;
     }
 }
