@@ -139,7 +139,6 @@ ul {
 
 .image-slide {
       height: 100vh;
-      background-position: 25% 20%;
 }
 
 .slick-slide.slick-center {
@@ -155,7 +154,7 @@ ul {
       margin: 0%;
       position: absolute;
       z-index: 2;
-      bottom: 4%;
+      bottom: 0%;
       left: 38%;
       transform: translate(-50%, -50%);
       display: flex;
@@ -178,6 +177,7 @@ button:hover {
 }
 
 button:focus {
+    outline: none;
 }
 
 .block-1 {
@@ -269,6 +269,10 @@ main {
         padding: 0;
     }
 
+    .image-slide {
+      background-position: 50% 20% !important;
+    }
+
 }
 
 @media screen and (max-width: 660px) {
@@ -285,6 +289,7 @@ main {
          left: 0;
         padding: 21px 36px;
     }
+
 }
 
 @media(max-width: 990px) {
@@ -306,6 +311,7 @@ main {
 
       .text-slide h1 {
             font-size: 30px !important;
+      padding-top: 12%;
       }
 
       .text-slider-wrapper {
@@ -315,5 +321,11 @@ main {
 
       .slider-control {
             left: 22.5%;
+      }
+}
+
+@media(min-width: 991px) {
+     .text-slide h1 {
+      padding-top: 13%;
       }
 }
