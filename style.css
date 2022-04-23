@@ -283,6 +283,11 @@ main {
   letter-spacing: 2px;
   display: inline-block;
   padding: 0 30px;
+  color: rgb(170, 151, 126);
+}
+
+.media ul li a:hover {
+      color: white;
 }
 
 
@@ -366,6 +371,10 @@ main {
   transform: rotate(-90deg);
 }
 
+.sponsor img:hover {
+      filter: drop-shadow(0 0 0.75rem orangered);
+}
+
 .sponsor p {
   margin-top: 20px;
   font-size: 12px;
@@ -386,8 +395,20 @@ main {
 }
 
 .pdf ion-icon {
-    font-size: 20px;
+    font-size: 24px;
     margin: 0 auto;
+}
+
+.pdf:hover {
+      color: #587291;
+}
+
+.ig-pointer {
+      position: absolute;
+      right: 80px;
+      bottom: 200px;
+      font-size: 24px;
+      color: rgb(119, 114, 114);
 }
 
 /* distortion */
@@ -399,26 +420,12 @@ main {
   bottom: 0;
 }
 
-
-
-
 .wrapper {
       position: absolute;
       width: 100% !important;
       height: 100vh;
       z-index: 2;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* page transition */
 #project-bg {
