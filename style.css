@@ -155,6 +155,16 @@ ul {
     letter-spacing: 1px;
 }
 
+.description {
+      display: flex;
+      align-items: center;
+}
+
+.description img {
+      height: 24px;
+      margin-right: 9px;
+}
+
 /* slider */
 .image-slider {
       z-index: 0;
