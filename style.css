@@ -508,12 +508,12 @@ main {
 
 @keyframes stripe-d {
       50% {
-            transform: translateY(-380%);
+            transform: translateY(-640%);
       }
 }
 
 .bw-img .stripe-up {
-      transform: translateY(-380%);
+      transform: translateY(-640%);
       animation: stripe-u 90s ease 0s infinite;
 }
 
