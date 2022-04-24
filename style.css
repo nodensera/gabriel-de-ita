@@ -469,7 +469,7 @@ main {
 }
 
 .social-bw {
-      bottom: 50px;
+      bottom: 150px;
       margin-top: 200px;
       position: absolute;
 }
@@ -477,15 +477,13 @@ main {
 .social-bw a {
       position: relative;
       display: inline-block;
-      width: 50px;
-      height: 50px;
-      line-height: 50px;
       text-align: center;
       color: #587291;
-      margin-right: 10px;
-      border: 1px soild white;
-      border-radius: 50%;
-      transition: all ease 0.6s;
+      margin-right: 24px;
+}
+
+.social-bw a ion-icon {
+      font-size: 21px;
 }
 
 .bw-img {
