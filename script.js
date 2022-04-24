@@ -47,7 +47,6 @@ var sickSecondary = {
   slidesToScroll: 1,
   speed: 1800,
   cssEase: 'cubic-bezier(.84, 0, .08, .99)',
-  asNavFor: '.image-slider',
   prevArrow: $('.prev'),
   nextArrow: $('.next'),
 };
