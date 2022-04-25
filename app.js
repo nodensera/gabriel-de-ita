@@ -40,3 +40,28 @@ exitBtn.addEventListener('click', () => {
   t1.timeScale(2.5);
   t1.reverse();
 });
+
+
+// image on hover effect
+var $cursor = $('.cursor'),
+  $overlay = $('.project-overlay');
+function moveCircle(e) {
+  TweenLite.to($cursor, 0.5, {
+    css: {
+      left: e.pageX,
+      top: e.pageY,
+    },
+    delay: 0.03,
+  });
+}
+
+var flag = false;
+$($overlay).mousemove(function () {
+  flag = true;
+  TweenLite.to($cursor, 0.3, { scale: 1, autoAlpha: 1 });
+  $($overlay).on('mousemove', moveCircle);
+});
+$($overlay).mouseout(function () {
+  flag = false;
+  TweenLite.to($cursor, 0.3, { scale: 0.1, autoAlpha: 0 });
+});
