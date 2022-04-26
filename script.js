@@ -80,8 +80,6 @@ $($overlay).mouseout(function () {
 });
 
 
-
-
 // project
 TweenMax.staggerFrom(
   '.block',
@@ -93,6 +91,7 @@ TweenMax.staggerFrom(
   },
   0.04
 );
+
 
 
 
