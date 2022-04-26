@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>campaigns</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
   </head>
-  <body>
+  <body class="body-cp">
 
 
     <nav>
@@ -95,7 +95,7 @@
 
     <div class="campaigns-description">
       <h1>
-        Producciones y campañas: 
+        Productions & Campaigns: 
       </h1>  
       <p>
         Lu and Co, Carlotina Clothing, Luzia Fazzolli, 
@@ -110,6 +110,13 @@
       </p>
 
       </p>
+      
+    </div>
+
+    <div class="social-media-cp">
+      <a href="#">instagram</a>
+      <a href="#">youtube</a>
+      <a href="#">twitter</a>
     </div>
 
     <div class="swiper slider slider_main">
@@ -192,6 +199,19 @@
     </div>
 
     
+
+    <div class="transition-container from-left">
+	<span class="tile"></span>
+	<span class="tile"></span>
+	<span class="tile"></span>
+	<span class="tile"></span>
+	<span class="tile"></span>
+	<span class="tile"></span>
+</div>
+
+
+
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
@@ -219,6 +239,52 @@
         },
         preventInteractionOnTransition: true,
       });
+
+      // page animation
+
+const fromLeft = document.querySelector("button#from-left");
+
+let tl = gsap.timeline({ ease: "power6.inOut" });
+
+	tl.set(fromLeft, {pointerEvents: 'none'})
+	tl.to(".from-left .tile", {
+		duration: 0.7,
+		width: "100%",
+    autoplay: true,
+		left: "0%",
+		delay: 0,
+		stagger: 0.05,
+	});
+	tl.to(".from-left .tile", {
+		duration: 0.7,
+		width: "100%",
+		left: "100%",
+		delay: 0,
+		stagger: -0.05,
+	});
+	tl.set(".from-left .tile", { left: "0", width: "0" });
+	tl.set(fromLeft, {pointerEvents: 'all'})
+
+// content
+TweenMax.to(".slider", 2, {
+        opacity: 1,
+        ease: Expo.easeInOut,
+        delay: 1,
+      });
+    
+  TweenMax.to(".campaigns-description", 2.4, {
+    opacity: 1,
+    ease: Expo.easeInOut,
+    delay: 1,
+    left: "3em",
+  });
+
+  TweenMax.to(".social-media-cp", 3, {
+    opacity: 1,
+    ease: Expo.easeInOut,
+    delay: 2,
+  });
+  
     </script>
   </body>
 </html>
