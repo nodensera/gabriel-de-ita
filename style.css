@@ -793,6 +793,31 @@ main {
 	 width: 0%;
 }
 
+/* scouting styles */
+.body-sc {
+	 width: 100%;
+	 height: 100vh;
+	 display: flex;
+	 flex-direction: column;
+	 overflow: hidden;
+}
+
+button#from-top {
+	 background: #587291;
+}
+
+
+ .transition-container span {
+	 position: relative;
+}
+
+.transition-container.from-top span {
+	 background: #587291;
+	 height: 0%;
+	 width: 100%;
+}
+ 
+
 
 
 /* contact styles */
