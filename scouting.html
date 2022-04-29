@@ -89,11 +89,67 @@
           </div>
         </div>
       </div>
-    </nav>
+    </nav>  
 
+  <div class="page-wrap">
 
+  <div id="home-slider">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide-one">
+          <div class="swiper-image" data-swiper-parallax-y="-20%">
+            <div class="swiper-image-inner swiper-image-left swiper-image-one">
+              <h1>A <span class="emphasis">Location</span>. <br><span>to Remember.</span></h1>
+              <p>Costa Rica</p>
+            </div>
+          </div>
+          <div class="swiper-image" data-swiper-parallax-y="35%">
+            <div class="swiper-image-inner swiper-image-right swiper-image-two">
+              <p class="paragraph">
+                Parque Marino Ballena (La Uvita)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-two">
+          <div class="swiper-image" data-swiper-parallax-y="-20%">
+            <div class="swiper-image-inner swiper-image-left swiper-image-three">
+              <h1>Some <span class="emphasis">Places</span>. <br><span>you won't stop visiting.</span></h1>
+              <p>Brazil</p>
+            </div>
+          </div>
+          <div class="swiper-image" data-swiper-parallax-y="35%">
+            <div class="swiper-image-inner swiper-image-right swiper-image-four">
+              <p class="paragraph">
+                From Pará State to Rio Grande Del Sur.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-three">
+          <div class="swiper-image" data-swiper-parallax-y="-20%">
+            <div class="swiper-image-inner swiper-image-left swiper-image-five">
+              <h1>A <span class="emphasis">Local</span>. <br><span>Expert.</span></h1>
+              <p>Mexico</p>
+            </div>
+          </div>
+          <div class="swiper-image" data-swiper-parallax-y="35%">
+            <div class="swiper-image-inner swiper-image-right swiper-image-six">
+              <p class="paragraph">
+                Mexico; Los Cabos, La Paz, Nuevo León, Riviera Nayarit, Jalisco, 
+                Puerto Vallarta, Bajío (Querétaro, Zacatecas, San Luis Potosí, Guanajuato) Chiapas, 
+                Oaxaca, Yucatán, Campeche, Veracruz, Quintana Roo.
+              </p>
+            </div>
+          </div>
+        </div>
 
-    
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+</div>
 
     <div class="transition-container from-top">
         <span class="tile"></span>
@@ -103,10 +159,6 @@
         <span class="tile"></span>
         <span class="tile"></span>
     </div>
-
-
-
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script
@@ -126,26 +178,46 @@
      const fromLeftButton = document.querySelector("button#from-left");
     const fromTopButton = document.querySelector("button#from-top");
 
-	let tl = gsap.timeline({ ease: "power4.inOut" });
+      let tl = gsap.timeline({ ease: "power4.inOut" });
 
-	tl.set(fromLeftButton, {pointerEvents: 'none'})
-	tl.to(".from-top .tile", {
-		duration: 0.5,
-		height: "100%",
-    autoplay: true,
-		top: "0%",
-		delay: 0.2,
-		stagger: 0.04,
-	});
-	tl.to(".from-top .tile", {
-		duration: 0.5,
-		height: "100%",
-		top: "100%",
-		delay: 0.2,
-		stagger: -0.04,
-	});
-	tl.set(".from-top .tile", { top: "0", height: "0" });
-	tl.set(fromLeftButton, {pointerEvents: 'all'})
+      tl.set(fromLeftButton, {pointerEvents: 'none'})
+      tl.to(".from-top .tile", {
+        duration: 0.5,
+        height: "100%",
+        autoplay: true,
+        top: "0%",
+        delay: 0.2,
+        stagger: 0.04,
+      });
+      tl.to(".from-top .tile", {
+        duration: 0.5,
+        height: "100%",
+        top: "100%",
+        delay: 0.2,
+        stagger: -0.04,
+      });
+      tl.set(".from-top .tile", { top: "0", height: "0" });
+      tl.set(fromLeftButton, {pointerEvents: 'all'})
+
+
+      // slider scouting
+      var mySwiper = new Swiper(".swiper-container", {
+        direction: "vertical",
+        loop: true,
+        pagination: ".swiper-pagination",
+        grabCursor: false,
+        speed: 3500,
+        paginationClickable: false,
+        autoplay: true,
+        effect: "slide",
+      });
+
+      TweenMax.to("#home-slider", 2, {
+            opacity: 1,
+            ease: Expo.easeInOut,
+            delay: .9,
+          });
+
     </script>
 
 </body>
