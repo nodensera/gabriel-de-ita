@@ -1695,6 +1695,61 @@ button.swiper-pagination-bullet {
       overflow: hidden;
 }
 
+.contact-info {
+  position: relative;
+  top: 44%;
+  left: 60px;
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
+.contact-info::after {
+  content: "";
+  background: url(./assets/gabriel-logo.png) no-repeat 0 0;
+  background-repeat: no-repeat;
+  background-position: 20% 50%;
+  background-size: contain;
+  opacity: 0.08;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+.contact-info h1 {
+  font-size: 1rem;
+    max-width: 630px;
+    font-weight: 300;
+    opacity: .8;
+}
+
+.contact-feautred-h1 {
+  font-size: 2rem;
+  font-family: 'Poiret One';
+  color: #587291;
+}
+
+.social-media-contact {
+  color: rgb(119, 114, 114);
+  position: absolute;
+  bottom: 80px;
+  left: 60px;
+      transform: translate(0, -50%);
+  max-width: 300px;
+      font-size: .9rem;
+      margin-top: 60px;
+      opacity: 0;
+}
+
+.social-media-contact a {
+  margin-right: 10px;
+}
+
+.social-media-contact a:hover {
+  color: #587291;
+}
+
 .overlay-contact {
   position: absolute;
   width: 100%;

@@ -87,6 +87,20 @@
       </div>
     </nav>
 
+    <div class="contact-info">
+      <h1> <span class="contact-feautred-h1">Gabriel de Ita</span> , Mexican, born in Mexico City, 
+      20 years in the fashion industry, at the beginning I've worked for Fashion Houses, then I dedicated 
+      myself to public relations, I represented Mexican, Colombian & Brasilian designers, 
+      I like the fashion coordination, I've organized & promote fashion shows for brand like Diesel, 
+      Kosiuko, Roxy, Mancandy, Mauro Babun, Ines Barona Daniel Espinioza, Gustavo Helguera. 
+      <br>
+      <br>
+      I develop modeling careers, from discovery to presentation & representation. During the past 9 years 
+      I have dedicated myself to photography, I started in 2012 with landscaping, traveling through Mexico, Costa Rica 
+      and Brazil. In 2015 I began to photograph models with natural outdoor light.
+      </h1>
+    </div>
+
     <div class="wrapper-contact-img">
         <div class="contact-box"></div>
         <div>
@@ -97,7 +111,11 @@
         </div>
       </div>
 
-
+      <div class="social-media-contact">
+      <a href="#">instagram</a>
+      <a href="#">youtube</a>
+      <a href="#">twitter</a>
+    </div>
 
 
 
@@ -161,6 +179,21 @@
         ease: Expo.easeInOut,
         delay: 1.5,
       });
+
+
+      // custom parragraph
+      TweenMax.to(".contact-info", 2.5, {
+          opacity: 1,
+          ease: Expo.easeInOut,
+          delay: 2,
+        });
+      
+      //social media
+      TweenMax.to(".social-media-contact", 3.5, {
+          opacity: 1,
+          ease: Expo.easeInOut,
+          delay: 2,
+        });
     </script>
     
 </body>
