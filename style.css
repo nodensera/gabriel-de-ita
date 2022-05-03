@@ -364,7 +364,7 @@ main {
 .text p {
   width: 200px;
   font-size: 12px;
-  margin-top: 30px;
+  margin-top: 10px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.39);
   position: relative;
@@ -684,6 +684,8 @@ main {
 .slider__wrapper {
   transition: var(--transition) !important;
   will-change: transform;
+  
+  background-color: #212121;
 }
 
 .slider__img {
@@ -691,15 +693,13 @@ main {
   width: 300%;
   position: absolute;
   height: 100%;
-  background-size: cover;
-
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center center;
   left: -100%;
-
   background-size: contain;
   background-position: center;
+  background-color: #212121;
   transition: var(--transition) !important;
 }
 
@@ -861,6 +861,18 @@ button#from-top {
 
 .swiper-image-six {
   background-image: url(./assets/scouting-images/sc-pic-6.jpg);
+}
+
+.swiper-image-seven {
+  background-image: url(./assets/scouting-images/sc-pic-7.jpg);
+}
+
+.swiper-image-eight {
+  background-image: url(./assets/scouting-images/sc-pic-8.jpg);
+}
+
+.swiper-image-nine {
+  background-image: url(./assets/scouting-images/sc-pic-9.jpg);
 }
 
 .swiper-image {
@@ -1724,10 +1736,33 @@ button.swiper-pagination-bullet {
     opacity: .8;
 }
 
-.contact-feautred-h1 {
+.contact-featured-h1 {
   font-size: 2rem;
   font-family: 'Poiret One';
   color: #587291;
+}
+
+.downloadables {
+  color: rgb(119, 114, 114);
+  max-width: 300px;
+      font-size: .9rem;
+      margin-top: 30px;
+      opacity: 0;
+  text-align: center;
+  z-index: 1;
+}
+.downloadables .pdfs {
+  color: rgb(170, 151, 126);
+  margin-right: 15px;
+}
+
+.downloadables .pdfs:hover {
+  color: #587291;
+}
+
+.pdfs ion-icon {
+    font-size: 24px;
+    margin: 0 auto;
 }
 
 .social-media-contact {
