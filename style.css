@@ -477,8 +477,15 @@ main {
       letter-spacing: 4px;
 }
 
+.text-bw h6 {
+  color: #5a5858;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 12px 0;
+}
+
 .social-bw {
-      bottom: 150px;
+      bottom: 99px;
       margin-top: 200px;
       position: absolute;
 }
@@ -1740,6 +1747,18 @@ button.swiper-pagination-bullet {
   font-size: 2rem;
   font-family: 'Poiret One';
   color: #587291;
+}
+
+.mex-img {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  opacity: 0;
+}
+
+.mex-img img {
+  height: 24px;
+  padding-right: 9px;
 }
 
 .downloadables {

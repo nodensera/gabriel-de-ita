@@ -67,12 +67,16 @@
           <div class="information">
             <p class="title">Where am I?</p>
             <p class="description">São Paulo, Brazil</p>
+            <p class="description">Playa del Carmen, Mexico</p>
           </div>
           <div class="information">
             <p class="title">Contact</p>
             <p class="description"><a href="mailto:info@gabrieldeita.com">info@gabrieldeita.com</a></p>
             <p class="description">
               <img src="./assets/brazil.svg" alt="Brazil Flag"> <a href="tel:+55 11 99150 3545">+55 11 99150-3545</a>
+            </p>
+            <p class="description">
+              <img src="./assets/mexico.svg" alt="Mexico Flag"> <a href="tel:+52 984 188 0554">+52 984 188 0554</a>
             </p>
           </div>
           <div class="information">
@@ -96,20 +100,25 @@
       <br>
       <br>
       I develop modeling careers, from discovery to presentation & representation. During the past 9 years 
-      I have dedicated myself to photography, I started in 2012 with landscaping, traveling through Mexico, Costa Rica 
-      and Brazil. In 2015 I began to photograph models with natural outdoor light.
+      I have dedicated myself to photography, I started in 2012 with landscaping, traveling through Mexico, 
+      Playa del Carmen, Brazil, São Paulo. In 2015 I began to photograph models with natural outdoor light.
       </h1>
+      
     </div>
-
+    
     
 
     <div class="wrapper-contact-img">
+      
         <div class="contact-box"></div>
         <div>
           <img
             class="contact-image"
             src="./assets/profile-pic.jpeg"
           />
+        </div>
+        <div class="mex-img">
+          <img class="mex-flag" src="./assets/mexico.svg" alt="Mexico Flag"> <a href="tel:+55 11 99150 3545">+55 11 99150-3545</a>
         </div>
         <div class="downloadables">
         <a href="./assets/mediakit-GabrielDeIta.pdf" class="pdfs" download=""><ion-icon name="cloud-download-outline"></ion-icon>Media Kit</a>
@@ -193,6 +202,13 @@
           ease: Expo.easeInOut,
           delay: 2,
         });
+
+      // flag & number
+      TweenMax.to(".mex-img", 2, {
+          opacity: 1,
+          ease: Expo.easeInOut,
+          delay: 2,
+        });   
 
       // pdf files
       TweenMax.to(".downloadables", 2, {
