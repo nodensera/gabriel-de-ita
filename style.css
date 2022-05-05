@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 :root {
       --size-index: calc(1vw + 1vh);
@@ -399,7 +400,7 @@ main {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 900;
-  transform: rotate(180deg);
+  transform: rotate(0deg) !important;
 }
 
 .pdf {
@@ -955,12 +956,12 @@ button#from-top {
 }
 .swiper-image-inner p.paragraph {
   margin: 0;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Lato', sans-serif;
   color: #fff;
   width: 100%;
-  max-width: 350px;
+  max-width: 450px;
   text-align: justify;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   opacity: 0;
   transition: all .6s cubic-bezier(0.215, 0.61, 0.355, 1) 1.4s;
@@ -1750,9 +1751,10 @@ button.swiper-pagination-bullet {
 }
 
 .mex-img {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
+  display: grid;
+  grid-template-columns: .1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 21px;
   opacity: 0;
 }
 
@@ -1765,7 +1767,7 @@ button.swiper-pagination-bullet {
   color: rgb(119, 114, 114);
   max-width: 300px;
       font-size: .9rem;
-      margin-top: 30px;
+      margin-top: 21px;
       opacity: 0;
   text-align: center;
   z-index: 1;
