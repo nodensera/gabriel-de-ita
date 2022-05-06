@@ -28,6 +28,10 @@ a {
   color: inherit;
 }
 
+ion-icon {
+ pointer-events: none;
+}
+
 /* menu */
 nav {
   position: relative;
