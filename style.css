@@ -1981,11 +1981,11 @@ button.swiper-pagination-bullet {
   }
 
   .wrapper {
+    top: -30px;
     background-image: url(./assets/distort-1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    box-shadow: drop-shadow;
   }
   
 }
