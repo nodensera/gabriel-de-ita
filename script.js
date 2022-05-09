@@ -55,6 +55,8 @@ $('.image-slider').slick(sickPrimary);
 $('.text-slider').slick(sickSecondary);
 
 
+
+
 // image on hover effect
 var $cursor = $('.cursor'),
   $overlay = $('.project-overlay');

@@ -1857,6 +1857,12 @@ button.swiper-pagination-bullet {
 }
 
 /* media queries */
+@media screen and (min-width: 320px) {
+
+}
+
+
+
 @media screen and (max-width: 481px) {
   .home {
     left: 0;
@@ -1879,9 +1885,26 @@ button.swiper-pagination-bullet {
     padding: 0;
   }
 
+  .image-slider {
+    display: flex;
+    left: -45% !important;
+    width: 150%;
+  }
+
   .image-slide {
     background-position: 50% 20% !important;
   }
+
+  .block-1 {
+    width: 30% !important;
+  }
+
+  .slider-control {
+    display: flex;
+    flex-direction: column;
+    left: 15% !important;
+  }
+
 }
 
 @media screen and (max-width: 660px) {
