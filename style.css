@@ -79,7 +79,7 @@ ul {
   justify-content: space-between;
   padding: 0px 50px;
   position: fixed;
-  top: -100%;
+  top: -200%;
   align-items: center;
   background-color: #212121;
   z-index: 3;
