@@ -1907,7 +1907,7 @@ button.swiper-pagination-bullet {
     bottom: 6%;
   }
 
-  /* mobile projects */
+  /* projects mobile */
   .text {
     top: 175px;
     left: 20px;
@@ -1938,7 +1938,7 @@ button.swiper-pagination-bullet {
 
   .sponsor {
     right: 42px;
-    bottom: 141px;
+    bottom: 30%;
   }
 
   .sponsor img {
@@ -1952,7 +1952,7 @@ button.swiper-pagination-bullet {
   }
 
   .media ul {
-    bottom: 30px;
+    bottom: 90px;
     left: 40px;
     transform: rotate(-0deg);
   }
@@ -1967,7 +1967,7 @@ button.swiper-pagination-bullet {
 
   .pdf {
     right: 36px;
-    bottom: 69px;
+    bottom: 21%;
   }
 
   .ig-pointer {
