@@ -1913,8 +1913,8 @@ button.swiper-pagination-bullet {
 
   /* projects mobile */
   .projects-bg-img {
-    display: initial;
-    margin-top: 30px;
+    display: flex;
+    margin: 30px auto 0 auto;
     height: 80vh;
     width: contain;
     opacity: 0;
@@ -1964,9 +1964,10 @@ button.swiper-pagination-bullet {
   }
 
   .media ul {
+    display: flex;
+    left: 50%;
     bottom: 66px;
-    left: 40px;
-    transform: rotate(-0deg);
+    transform: translate(-50%);
   }
 
   .media ul li {
@@ -2011,6 +2012,23 @@ button.swiper-pagination-bullet {
   .home {
     left: 0;
     padding: 21px 36px;
+  }
+
+  /* projects tablet styles */
+  .projects-bg-img {
+    display: none;
+  }
+
+  .distortion {
+    margin: 0 -390px 0 0 !important;
+    width: 200px;
+    left: 30%;
+    z-index: -1;
+  }
+
+  .distortion[style*=".png)"] {
+    height: 90px !important;
+    background-color: red !important;
   }
 }
 
