@@ -1972,7 +1972,7 @@ button.swiper-pagination-bullet {
 
   .ig-pointer {
     right: 70px;
-    bottom: 200px;
+    bottom: 39%;
     transform: rotate(-90deg) !important;
   }
 
@@ -1982,10 +1982,11 @@ button.swiper-pagination-bullet {
 
   .wrapper {
     top: -30px;
-    background-image: url(./assets/distort-1.png);
+    /*background-image: url(./assets/distort-1.png);*/
     background-position: 60% 30%;
     background-repeat: no-repeat;
     background-size: contain;
+    opacity: 0;
   }
 
   .text p .hidetext {

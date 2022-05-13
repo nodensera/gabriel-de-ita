@@ -91,7 +91,7 @@
       </div>
     </nav>
 
-    <div class="wrapper">
+    <div class="wrapper" style="background-image: url(./assets/distort-1.png);">
       <!-- social media -->
       <div class="media">
         <ul>
@@ -261,6 +261,13 @@
       y: "20",
       ease: Expo.easeInOut
     }); 
+
+    // wrapper on mobile
+   TweenMax.to(".wrapper", 1, {
+          opacity: 1,
+          ease: Expo.easeInOut,
+          delay: 1,
+        });
 
   </script>
   </body>
