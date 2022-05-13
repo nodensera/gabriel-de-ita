@@ -1865,8 +1865,7 @@ button.swiper-pagination-bullet {
 
 }
 
-
-
+/* media queries max width 481px */
 @media screen and (max-width: 481px) {
   
   .home {
@@ -1913,7 +1912,7 @@ button.swiper-pagination-bullet {
 
   /* projects mobile */
   .projects-bg-img {
-    display: flex;
+    display: flex !important;
     margin: 30px auto 0 auto;
     height: 80vh;
     width: contain;
@@ -1999,6 +1998,95 @@ button.swiper-pagination-bullet {
   
 }
 
+/* min */
+@media screen and (min-width: 482px) and (max-width: 660px) {
+  /* projects tablet styles */
+  .text {
+    top: 175px;
+    left: 20px;
+    transform: rotate(-0deg);
+  }
+
+  .text h1 {
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: -4px;
+    height: 50px;
+    width: 240px;
+  }
+
+  .text h2 {
+    top: 20px;
+    left: 0px;
+    font-size: 50px;
+    letter-spacing: 8px;
+  }
+
+  .text h3 {
+    font-size: 40px;
+    line-height: 1;
+    height: 80px;
+    margin-top: 24px;
+  }
+
+  .sponsor {
+    left: 21px !important;
+    bottom: 25%;
+    text-align: left;
+  }
+
+  .sponsor img {
+    margin-bottom: 0;
+    width: 99px;
+    transform: rotate(-0deg) !important;
+  }
+
+  .sponsor p {
+    display: none;
+  }
+
+  .media ul {
+    display: flex;
+    left: 50%;
+    bottom: 66px;
+    transform: translate(-50%);
+  }
+
+  .media ul li {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 0 10px;
+  }
+
+  .pdf {
+    position: absolute;
+    left: 21px;
+    right: auto;
+    bottom: 17%;
+  }
+
+  .ig-pointer {
+    right: auto;
+    left: 150px;
+    bottom: 27%;
+    transform: rotate(-0deg) !important;
+  }
+
+  .projects-bg-img {
+    display: none;
+  }
+
+  .distortion {
+    display: initial;
+    width: 100%;
+    left: 39%;
+    z-index: -1;
+  }
+}
+
+/* media queries max width 660px */
 @media screen and (max-width: 660px) {
   .menu {
     flex-direction: column;
@@ -2014,24 +2102,12 @@ button.swiper-pagination-bullet {
     padding: 21px 36px;
   }
 
-  /* projects tablet styles */
-  .projects-bg-img {
-    display: none;
-  }
+  
 
-  .distortion {
-    margin: 0 -390px 0 0 !important;
-    width: 200px;
-    left: 30%;
-    z-index: -1;
-  }
-
-  .distortion[style*=".png)"] {
-    height: 90px !important;
-    background-color: red !important;
-  }
 }
 
+
+/* media queries max width 990px */
 @media (max-width: 990px) {
   .block-2,
   .overlay {
