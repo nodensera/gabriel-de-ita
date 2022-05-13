@@ -1938,7 +1938,7 @@ button.swiper-pagination-bullet {
 
   .sponsor {
     right: 42px;
-    bottom: 63px;
+    bottom: 141px;
   }
 
   .sponsor img {
@@ -1966,13 +1966,13 @@ button.swiper-pagination-bullet {
   }
 
   .pdf {
-    right: 190px;
+    right: 36px;
     bottom: 69px;
   }
 
   .ig-pointer {
     right: 70px;
-    bottom: 140px;
+    bottom: 200px;
     transform: rotate(-90deg) !important;
   }
 
@@ -1983,9 +1983,13 @@ button.swiper-pagination-bullet {
   .wrapper {
     top: -30px;
     background-image: url(./assets/distort-1.png);
-    background-position: center;
+    background-position: 60% 30%;
     background-repeat: no-repeat;
     background-size: contain;
+  }
+
+  .text p .hidetext {
+    color: rgb(226, 226, 226);
   }
   
 }
