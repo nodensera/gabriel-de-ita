@@ -294,6 +294,9 @@ main {
 }
 
 /* project styles */
+.projects-bg-img {
+  display: none;
+}
 
 .media ul {
   position: absolute;
@@ -1865,6 +1868,7 @@ button.swiper-pagination-bullet {
 
 
 @media screen and (max-width: 481px) {
+  
   .home {
     left: 0;
   }
@@ -1908,6 +1912,14 @@ button.swiper-pagination-bullet {
   }
 
   /* projects mobile */
+  .projects-bg-img {
+    display: initial;
+    margin-top: 30px;
+    height: 80vh;
+    width: contain;
+    opacity: 0;
+  }
+
   .text {
     top: 175px;
     left: 20px;
@@ -1952,7 +1964,7 @@ button.swiper-pagination-bullet {
   }
 
   .media ul {
-    bottom: 90px;
+    bottom: 66px;
     left: 40px;
     transform: rotate(-0deg);
   }
@@ -1978,15 +1990,6 @@ button.swiper-pagination-bullet {
 
   .distortion {
     display: none;
-  }
-
-  .wrapper {
-    top: -30px;
-    /*background-image: url(./assets/distort-1.png);*/
-    background-position: 60% 30%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    opacity: 0;
   }
 
   .text p .hidetext {

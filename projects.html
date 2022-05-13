@@ -91,7 +91,8 @@
       </div>
     </nav>
 
-    <div class="wrapper" style="background-image: url(./assets/distort-1.png);">
+    <div class="wrapper">
+      <img class="projects-bg-img" src="./assets/distort-1.png" alt="Distort BG">
       <!-- social media -->
       <div class="media">
         <ul>
@@ -216,7 +217,7 @@
       ease: Expo.easeInOut
     });
 
-    TweenMax.from(".text h2", 2, {
+    TweenMax.from(".text h2", 1.8, {
       delay: 2,
       opacity: 0,
       x: "-10000",
@@ -262,11 +263,11 @@
       ease: Expo.easeInOut
     }); 
 
-    // wrapper on mobile
-   TweenMax.to(".wrapper", 1, {
+    // background image on mobile
+   TweenMax.to(".projects-bg-img", 1, {
           opacity: 1,
           ease: Expo.easeInOut,
-          delay: 1,
+          delay: 3.5,
         });
 
   </script>
