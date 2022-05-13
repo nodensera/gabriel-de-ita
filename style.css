@@ -330,15 +330,17 @@ main {
   font-size: 120px;
   text-transform: uppercase;
   font-weight: 900;
-  letter-spacing: -10px;
+  letter-spacing: -2px;
   margin-bottom: 0px;
   position: relative;
   overflow: hidden;
   height: 150px;
   width: 600px;
 }
+
 .text h1 .hidetext {
   position: absolute;
+  opacity: 1;
 }
 
 .text h2 {
@@ -381,6 +383,7 @@ main {
 }
 .text p .hidetext {
   position: absolute;
+  color: rgb(226, 226, 226);
 }
 
 /* sponsor */
@@ -444,6 +447,7 @@ main {
   position: absolute;
   right: 300px;
   bottom: 0;
+  z-index: -1;
 }
 
 .wrapper {
@@ -1999,7 +2003,7 @@ button.swiper-pagination-bullet {
 }
 
 /* min */
-@media screen and (min-width: 482px) and (max-width: 660px) {
+@media screen and (min-width: 482px) and (max-width: 659px) {
   /* projects tablet styles */
   .text {
     top: 175px;
@@ -2101,9 +2105,47 @@ button.swiper-pagination-bullet {
     left: 0;
     padding: 21px 36px;
   }
+}
 
-  
 
+/* media queries 989px */
+@media (min-width: 660px) and (max-width: 1024px) {
+  .projects-bg-img {
+    display: none;
+  }
+
+  /* text */
+  .text h1 {
+    letter-spacing: -3px;
+  }
+
+  .text h2 {
+    top: 0;
+    left: -9px;
+    letter-spacing: -6px;
+  }
+
+  /* sponsor */
+  .sponsor {
+    right: 20px;
+    bottom: 100px;
+    text-align: center;
+  }
+
+  .pdf {
+    right: 60px;
+    bottom: 40px;
+  }
+
+  .ig-pointer {
+    right: 24px;
+  }
+
+  /* distortion */
+  .distortion {
+    right: 0 !important;
+    z-index: -1;
+  }
 }
 
 
