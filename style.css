@@ -495,6 +495,10 @@ main {
   margin: 12px 0;
 }
 
+.btn-bw:hover {
+  color: #587291;
+}
+
 .social-bw {
   bottom: 99px;
   margin-top: 200px;
@@ -507,6 +511,10 @@ main {
   text-align: center;
   color: #587291;
   margin-right: 24px;
+}
+
+.social-bw a:hover {
+  color: #5a5858;
 }
 
 .social-bw a ion-icon {
@@ -1998,6 +2006,48 @@ button.swiper-pagination-bullet {
 
   .text p .hidetext {
     color: rgb(226, 226, 226);
+  }
+
+  /* beachwear mobile styles */
+  .text-bw {
+    padding: 15px 15px 15px 24px;
+    z-index: 1;
+  }
+
+  .text-bw h1 {
+    font-size: 40px; 
+    line-height: 36px; 
+    margin-top: 36px; 
+  }
+
+
+  .text-bw h6 {
+    color: #ffffff; 
+    font-size: 13px; 
+  }
+
+  .btn-bw {
+    color: #5a5858;
+    font-weight: 600;
+    font-size: 14px; 
+  }
+
+  .btn-bw:hover {
+    color: #fff;
+  }
+
+  .bw-img .bw-img-stripe {
+    width: calc(100% - 15px); 
+  }
+
+  @keyframes stripe-d {
+    50% {
+      transform: translateY(-200%); 
+    }
+  }
+
+  .bw-img .stripe-up {
+    display: none; 
   }
   
 }
