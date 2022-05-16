@@ -2049,7 +2049,37 @@ button.swiper-pagination-bullet {
   .bw-img .stripe-up {
     display: none; 
   }
-  
+
+  /* campaigns mobile styles */
+  .slider {
+    width: 100%;
+    top: 24vh;
+    opacity: .4 !important;
+  }
+
+  .campaigns-description {
+    left: 2em !important;
+    z-index: 2;
+  }
+
+  .campaigns-description h1 {
+    font-size: 2.1rem;
+    color: #fff;
+  }
+
+  .campaigns-description p {
+    font-size: 1rem !important;
+    color: #fff;
+    opacity: 1;
+  }
+
+  .social-media-cp {
+    display: flex;
+    bottom: 42px !important;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+  }
 }
 
 /* min */
@@ -2139,7 +2169,7 @@ button.swiper-pagination-bullet {
     z-index: -1;
   }
 
-  /* beachwear mobile styles */
+  /* beachwear tablet styles */
   .text-bw {
     padding: 15px 15px 15px 24px;
   }
@@ -2178,6 +2208,46 @@ button.swiper-pagination-bullet {
 
   .bw-img .stripe-up {
     display: none; 
+  }
+
+  /* campaigns tablet styles */
+  .slider {
+    width: 100%;
+    top: 24vh;
+    opacity: .4 !important;
+  }
+
+  .slider::before {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 39%;
+    background-color: #212121;
+    z-index: 5;
+  }
+
+  .campaigns-description {
+    left: 2em !important;
+    z-index: 2;
+  }
+
+  .campaigns-description h1 {
+    font-size: 2.1rem;
+    color: #fff;
+  }
+
+  .campaigns-description p {
+    font-size: 1rem !important;
+    color: #fff;
+    opacity: 1;
+  }
+
+  .social-media-cp {
+    display: flex;
+    bottom: 42px !important;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
   }
 }
 
