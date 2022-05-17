@@ -2053,9 +2053,14 @@ button.swiper-pagination-bullet {
   /* campaigns mobile styles */
   .slider {
     width: 100%;
-    top: 24vh;
+    top: 21vh;
     opacity: .4 !important;
   }
+
+  .swiper-slide:nth-child(11),
+  .swiper-slide:nth-child(6) {
+    display: none;
+  } 
 
   .campaigns-description {
     left: 2em !important;
