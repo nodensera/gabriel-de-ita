@@ -741,15 +741,18 @@ main {
   left: -30em;
   max-width: 300px;
   transition: opacity var(--transition), transform var(--transition);
+  z-index: 2 !important;
 }
 
 .campaigns-description h1 {
+  font-size: 2.4rem;
   color: #587291;
   line-height: 32px;
   margin: 24px 0;
 }
 
 .campaigns-description p {
+  font-size: 1rem;
   color: rgb(170, 151, 126);
   opacity: 0.9;
   transition: transform var(--transition);
@@ -2238,20 +2241,18 @@ button.swiper-pagination-bullet {
 
   .campaigns-description h1 {
     font-size: 2.1rem;
-    color: #fff;
   }
 
   .campaigns-description p {
     font-size: 1rem !important;
-    color: #fff;
     opacity: 1;
   }
 
   .social-media-cp {
     display: flex;
+    font-size: .8rem;
+    left: 2.4em;
     bottom: 42px !important;
-    left: 50%;
-    transform: translate(-50%);
     z-index: 2;
   }
 }
@@ -2272,7 +2273,6 @@ button.swiper-pagination-bullet {
     padding: 21px 36px;
   }
 }
-
 
 /* media queries min 660px & max 1024px */
 @media (min-width: 660px) and (max-width: 1024px) {
@@ -2337,6 +2337,44 @@ button.swiper-pagination-bullet {
 
   .bw-img .stripe-up {
     transform: translateY(-390%);
+  }
+
+  /* campaigns tablet styles */
+  .slider {
+    margin-right: 54px !important;
+  }
+
+  .swiper-wrapper {
+    margin-left: 69px;
+  }
+
+  .slider::before {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 15%;
+    background-color: #212121;
+    z-index: 5;
+  }
+
+  .campaigns-description {
+    left: 2em !important;
+    z-index: 2;
+  }
+
+  .campaigns-description h1 {
+    font-size: 2.1rem;
+  }
+
+  .campaigns-description p {
+    font-size: 1rem !important;
+    opacity: 1;
+  }
+
+  .social-media-cp {
+    left: 2.4em;
+    bottom: 90px !important;
+    z-index: 2;
   }
 }
 
